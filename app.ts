@@ -42,3 +42,39 @@ bot.dialog("noneIntent", (session) => {
 }).triggerAction({
     matches: "Nonde"
 });
+
+bot.dialog("Utilities.Cancel", (session) => {
+    session.send(session.message);
+}).triggerAction({
+    matches: "Utilities.Cancel"
+});
+
+bot.dialog("Utilities.Confirm", (session) => {
+    session.send(session.message);
+}).triggerAction({
+    matches: "Utilities.Confirm"
+});
+
+bot.dialog("Utilities.Help", (session) => {
+    session.send(session.message);
+}).triggerAction({
+    matches: "Utilities.Help"
+});
+
+bot.dialog("Utilities.StartOver", (session) => {
+    session.send(session.message);
+}).triggerAction({
+    matches: "Utilities.StartOver"
+});
+
+bot.dialog("Utilities.Stop", (session) => {
+    session.send(session.message);
+}).triggerAction({
+    matches: "Utilities.Stop"
+});
+
+bot.dialog("FindForm", (session) => {
+    session.send(session.message);
+}).triggerAction({
+    matches: "FindForm"
+});
