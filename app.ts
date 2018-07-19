@@ -78,3 +78,9 @@ bot.dialog("FindForm", (session) => {
 }).triggerAction({
     matches: "FindForm"
 });
+
+bot.dialog("MoveEmployee", (session) => {
+    session.send(session.message);
+}).triggerAction({
+    matches: "MoveEmployee"
+});
